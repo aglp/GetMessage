@@ -1,2 +1,4 @@
 # GetMessage
-Get page with message in content
+Get page with message in content.
+
+Test with : https://aglp.github.io/GetMessage/?message=XXXXX
