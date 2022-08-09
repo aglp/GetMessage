@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <body>
     <script>
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        const messageParam = urlParams.get('message')
-        const message = messageParam ? messageParam : "Please setup message variable in URL : " + window.location + "?message=XXXXX";
+        const messageParam = urlParams.get('message');
+        const urlWithParamExample = window.location + "?message=XXXXX";
+        const message = messageParam ? messageParam : "Please setup message variable in URL : <a href='" + urlWithParamExample + "'>" + urlWithParamExample + "</a>";
         document.getElementsByTagName('body')[0].innerHTML = message;
     </script>
 </body>
